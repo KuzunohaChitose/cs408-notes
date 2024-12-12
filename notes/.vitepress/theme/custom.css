@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "JbMn";
+    src: url("/resources/fonts/JetBrainsMono-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "JbMn";
+    src: url("/resources/fonts/JetBrainsMono-Italic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "JbMn";
+    src: url("/resources/fonts/JetBrainsMono-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "JbMn";
+    src: url("/resources/fonts/JetBrainsMono-BoldItalic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: bold;
+}
+
+:root {
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(
+        120deg,
+        #bd34fe,
+        #41d1ff
+    );
+}
+
+pre,
+code,
+kbd,
+samp {
+    font-family: "JbMn" !important;
+}
+
+.text {
+    color: #5b83a8;
+}
+
+.desc_no-border td {
+    border: none;
+}
+.desc_no-border tr {
+    border: none;
+}
+
+.desc_no-background .ant-descriptions-row {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.ant-descriptions {
+    color: var(--vp-custom-block-info-text) !important;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1279px) {
+    .asumi {
+        display: none;
+    }
+}
+
+mjx-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#app {
+    overflow: hidden;
+}
+
+.fp {
+    aspect-ratio: 8 / 5;
+}
